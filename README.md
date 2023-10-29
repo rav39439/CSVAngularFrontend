@@ -1,27 +1,20 @@
-# FileProcessing
+<!--
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+Note the following points after cloning this repository:
+1) In this project , First Go to the API folder in the command terminal and run npm install to install all the dependencies
 
-## Development server
+2)Then run in the API folder or directory in command terminal , run nodemon index.js to run the API at localhost:8800
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+3) After the API is running , then open another terminal side by side to API command terminal.
 
-## Code scaffolding
+4) In this new terminal , go to FrontEnd folder , and run npm install to install all the dependencies of the angular FrontEnd folder.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+5) After all the dependencies of angular FrontEnd folder is installed run ng serve to start the angular APP.
 
-## Build
+6) In this project , data.csv file will constantly get updated with CRUD operations on Angular frontend APP
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+. -->

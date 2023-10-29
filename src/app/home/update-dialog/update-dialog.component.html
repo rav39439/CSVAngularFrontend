@@ -1,0 +1,40 @@
+
+<h1 mat-dialog-title>Update Data in CSV</h1>
+<div mat-dialog-content>
+
+  <mat-form-field appearance="fill">
+    <mat-label>First name</mat-label>
+    <input matInput [(ngModel)]="data.Name">
+  </mat-form-field><br>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Last Name</mat-label>
+    <input matInput [(ngModel)]="data.Surname">
+  </mat-form-field><br>
+
+  <mat-form-field appearance="fill">
+    <mat-label>id</mat-label>
+    <input matInput [(ngModel)]="data.Id" readonly="true">
+  </mat-form-field><br>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Gender</mat-label>
+    <input matInput [(ngModel)]="data.Gender">
+  </mat-form-field><br>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Age</mat-label>
+    <input matInput [(ngModel)]="data.Age">
+  </mat-form-field><br>
+
+  <!-- <p>Gender</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Gender</mat-label>
+    <input matInput [(ngModel)]="data.Gender">
+  </mat-form-field> -->
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data" style="margin-left: 20px;" cdkFocusInitial>Edit</button>
+</div>
