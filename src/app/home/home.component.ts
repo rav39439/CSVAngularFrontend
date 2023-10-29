@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit{
   dataSource = new MatTableDataSource();
   dataCopy:any[]=[]
   subs:any[]=[]
+  userInput:any
 
   objectData = {
     "name": "dfssg",
@@ -185,5 +186,12 @@ this.dataCopy=d
     console.log(max)
     return max
   }
-
+  getdataById(){
+this.http.get(`http://localhost:8800/get/${this.userInput}`).subscribe((res:any)=>{
+  let b:any[]=[]
+  res[0]['Id']=this.userInput
+  console.log(res)
+  this.dataSource=res
+})
+  }
 }

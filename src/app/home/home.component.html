@@ -1,6 +1,12 @@
 
 <h1>CSV file data</h1>
 <small>Please refresh the page if data does not update</small>
+<div class="mt-4" style="display: flex; flex-direction: row;margin-top: 20px;">
+  <input class="form-control" type="text" [(ngModel)]="userInput" placeholder="get Records by ID" aria-label="Search">
+  <button mat-raised-button (click)="getdataById()" style="margin-left: 20px;">get</button>
+
+</div>
+
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
   <!--- Note that these columns can be defined in any order.
